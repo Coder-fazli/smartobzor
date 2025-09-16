@@ -1,0 +1,944 @@
+/* Calorie Calculator - Original Design Recreation */
+
+.calorie-calculator {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: white !important;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Ensure clean white background for all form elements */
+.calorie-calculator .calc-form,
+.calorie-calculator .calc-section,
+.calorie-calculator .calc-header {
+    background: transparent !important;
+}
+
+/* Remove any inherited background colors that might interfere */
+.calorie-calculator .gender-selection,
+.calorie-calculator .goal-selection,
+.calorie-calculator .formula-selection,
+.calorie-calculator .activity-slider,
+.calorie-calculator .input-row {
+    background: transparent !important;
+}
+
+/* Header */
+.calc-header {
+    padding: 0 0 20px 0;
+    text-align: left;
+    background: white;
+    border: none;
+}
+
+.calc-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 15px 0;
+    line-height: 1.2;
+}
+
+.calc-description {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.4;
+    margin: 0 0 25px 0;
+}
+
+/* Form */
+.calc-form {
+    padding: 0;
+    background: transparent;
+}
+
+/* Sections */
+.calc-section {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-bullet {
+    color: #f39c12;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.info-icon {
+    color: #999;
+    cursor: help;
+    font-size: 16px;
+    margin-left: auto;
+}
+
+/* Gender Selection */
+.gender-selection {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.gender-option {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid #e0e0e0;
+    background: white;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+    position: relative;
+    display: block;
+}
+
+.gender-option input {
+    display: none;
+}
+
+.gender-option.selected {
+    background: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+.gender-option:hover:not(.selected) {
+    border-color: #ccc;
+}
+
+/* Input Row */
+.input-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 120px;
+}
+
+.input-group label {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.input-group input {
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    text-align: center;
+    transition: all 0.2s ease;
+    background: white;
+    font-weight: 500;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.input-group input:focus {
+    outline: 2px solid #4CAF50;
+    outline-offset: 0px;
+    border-color: #4CAF50;
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.15);
+}
+
+.input-group input:hover:not(:focus) {
+    border-color: #999;
+}
+
+/* Activity Slider */
+.activity-slider {
+    margin: 15px 0;
+}
+
+.slider {
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    background: #e0e0e0;
+    outline: none;
+    -webkit-appearance: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff6b35;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff6b35;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+    -moz-appearance: none;
+}
+
+.slider::-moz-range-thumb:hover {
+    transform: scale(1.1);
+}
+
+.slider::-moz-range-track {
+    height: 8px;
+    border-radius: 4px;
+    background: #e0e0e0;
+    border: none;
+}
+
+/* Slider Progress */
+.slider {
+    background: linear-gradient(to right, #ff6b35 0%, #ff6b35 20%, #e0e0e0 20%, #e0e0e0 100%);
+}
+
+.activity-current {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.activity-description {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Goal Selection */
+.goal-selection {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.goal-option {
+    flex: 1;
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    background: white;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+    position: relative;
+    display: block;
+}
+
+.goal-option input {
+    display: none;
+}
+
+.goal-option.selected {
+    background: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+.goal-option:hover:not(.selected) {
+    border-color: #ccc;
+}
+
+/* Formula Selection */
+.formula-selection {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.formula-option {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid #e0e0e0;
+    background: white;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+    position: relative;
+    display: block;
+}
+
+.formula-option input {
+    display: none;
+}
+
+.formula-option.selected {
+    background: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+.formula-option:hover:not(.selected) {
+    border-color: #ccc;
+}
+
+/* Calculate Button */
+.calc-button {
+    width: 100%;
+    padding: 14px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 25px;
+    transition: background 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.calc-button:hover {
+    background: #45a049;
+}
+
+.calc-button:active {
+    transform: translateY(1px);
+}
+
+.calc-icon {
+    font-size: 18px;
+}
+
+/* Results */
+.calc-results {
+    padding: 30px;
+    background: #f8f9fa;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 30px;
+}
+
+.results-content {
+    text-align: left;
+}
+
+.results-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Result Cards */
+.result-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+/* BMI Display */
+.bmi-display {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bmi-value {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    min-width: 80px;
+}
+
+.bmi-indicator {
+    flex: 1;
+}
+
+.bmi-bar {
+    position: relative;
+    height: 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.bmi-gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+        #3498db 0%, #3498db 25%,
+        #2ecc71 25%, #2ecc71 50%,
+        #f39c12 50%, #f39c12 75%,
+        #e74c3c 75%, #e74c3c 100%
+    );
+    border-radius: 4px;
+}
+
+.bmi-pointer {
+    position: absolute;
+    top: -6px;
+    width: 20px;
+    height: 20px;
+    background: #333;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    border: 3px solid white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bmi-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Calories Display */
+.calories-display {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.circular-progress {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.progress-ring {
+    transform: rotate(-90deg);
+}
+
+.progress-ring-background {
+    fill: none;
+    stroke: #f0f0f0;
+    stroke-width: 8;
+}
+
+.progress-ring-progress {
+    fill: none;
+    stroke: #667eea;
+    stroke-width: 8;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.calories-number {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1;
+}
+
+.calories-label {
+    font-size: 12px;
+    color: #666;
+    margin-top: 2px;
+}
+
+.calories-breakdown {
+    flex: 1;
+}
+
+.breakdown-title {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.macro-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.macro-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 4px 0;
+}
+
+.macro-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+.calorie-calculator .protein-dot {
+    background: #f39c12 !important;
+    border: none !important;
+}
+
+.calorie-calculator .fat-dot {
+    background: #e91e63 !important;
+    border: none !important;
+}
+
+.calorie-calculator .carb-dot {
+    background: #9c27b0 !important;
+    border: none !important;
+}
+
+.macro-value {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    min-width: 55px;
+}
+
+.macro-label {
+    font-size: 13px;
+    color: #666;
+    margin-left: auto;
+}
+
+.result-note {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Loading state */
+.calc-button.loading {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.calc-button.loading .calc-icon {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive breakpoint for small containers */
+@media (max-width: 500px) {
+    .input-row {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .input-group {
+        min-width: unset;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .calorie-calculator {
+        margin: 10px;
+        padding: 25px 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .calc-title {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .calc-description {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .section-title {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+    .input-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input-group input {
+        padding: 16px 12px;
+        font-size: 16px;
+        min-height: 50px;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    .gender-selection,
+    .goal-selection,
+    .formula-selection {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .gender-option,
+    .goal-option,
+    .formula-option {
+        width: 100%;
+        padding: 16px 20px;
+        font-size: 16px;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .calc-button {
+        padding: 18px;
+        font-size: 16px;
+        min-height: 60px;
+        margin-top: 30px;
+    }
+
+    /* Slider improvements */
+    .slider {
+        height: 12px;
+        margin-bottom: 20px;
+    }
+
+    .slider::-webkit-slider-thumb {
+        width: 24px;
+        height: 24px;
+    }
+
+    .slider::-moz-range-thumb {
+        width: 24px;
+        height: 24px;
+    }
+
+    .activity-current {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .activity-description {
+        font-size: 15px;
+    }
+
+    /* Results section */
+    .calc-results {
+        padding: 25px 20px;
+        margin-top: 25px;
+    }
+
+    .results-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .result-card {
+        padding: 20px 15px;
+        margin-bottom: 15px;
+    }
+
+    .bmi-display,
+    .calories-display {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .bmi-value {
+        font-size: 32px;
+    }
+
+    .calories-number {
+        font-size: 22px;
+    }
+
+    .macro-items {
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .macro-item {
+        justify-content: space-between;
+        padding: 8px 0;
+    }
+
+    .macro-dot {
+        width: 16px;
+        height: 16px;
+    }
+
+    .macro-value {
+        font-size: 16px;
+        min-width: 60px;
+    }
+
+    .macro-label {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calorie-calculator {
+        margin: 5px;
+        padding: 20px 15px;
+        border-radius: 8px;
+    }
+
+    .calc-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .calc-description {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .calc-section {
+        margin-bottom: 30px;
+    }
+
+    .input-group input {
+        padding: 14px 10px;
+        font-size: 16px;
+        min-height: 48px;
+    }
+
+    .input-group label {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    .gender-option,
+    .goal-option,
+    .formula-option {
+        padding: 14px 16px;
+        font-size: 15px;
+        min-height: 48px;
+    }
+
+    .calc-button {
+        padding: 16px;
+        font-size: 15px;
+        min-height: 56px;
+        margin-top: 25px;
+    }
+
+    .calc-icon {
+        font-size: 16px;
+    }
+
+    /* Improved slider for small screens */
+    .slider {
+        height: 10px;
+    }
+
+    .slider::-webkit-slider-thumb {
+        width: 22px;
+        height: 22px;
+    }
+
+    .slider::-moz-range-thumb {
+        width: 22px;
+        height: 22px;
+    }
+
+    .activity-current {
+        font-size: 16px;
+    }
+
+    .activity-description {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    /* Results optimizations */
+    .calc-results {
+        padding: 20px 15px;
+    }
+
+    .results-title {
+        font-size: 20px;
+    }
+
+    .result-card {
+        padding: 15px;
+    }
+
+    .card-header h3 {
+        font-size: 15px;
+    }
+
+    .bmi-value {
+        font-size: 28px;
+    }
+
+    .bmi-labels {
+        font-size: 11px;
+    }
+
+    .circular-progress {
+        transform: scale(0.9);
+    }
+
+    .calories-number {
+        font-size: 20px;
+    }
+
+    .breakdown-title {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .macro-item {
+        padding: 6px 0;
+    }
+
+    .macro-value {
+        font-size: 15px;
+        min-width: 55px;
+    }
+
+    .macro-label {
+        font-size: 13px;
+    }
+
+    .result-note {
+        font-size: 11px;
+        margin-top: 15px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+    .calorie-calculator {
+        margin: 2px;
+        padding: 15px 12px;
+    }
+
+    .calc-title {
+        font-size: 22px;
+    }
+
+    .calc-description {
+        font-size: 13px;
+    }
+
+    .input-group input {
+        padding: 12px 8px;
+        font-size: 15px;
+        min-height: 44px;
+    }
+
+    .gender-option,
+    .goal-option,
+    .formula-option {
+        padding: 12px 14px;
+        font-size: 14px;
+        min-height: 44px;
+    }
+
+    .calc-button {
+        padding: 14px;
+        font-size: 14px;
+        min-height: 52px;
+    }
+
+    .result-card {
+        padding: 12px;
+    }
+}
+
+/* Landscape orientation for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .calorie-calculator {
+        padding: 20px;
+    }
+
+    .input-row {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .gender-selection,
+    .goal-selection,
+    .formula-selection {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .calc-section {
+        margin-bottom: 25px;
+    }
+}
