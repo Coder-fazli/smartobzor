@@ -1,0 +1,1236 @@
+# Translation of Plugins - Easy Watermark - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Easy Watermark - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-07-10 08:42:10+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.0-alpha.1\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Easy Watermark - Stable (latest release)\n"
+
+#: src/classes/Features/CacheBusting.php:65
+msgid "Cache busting"
+msgstr "Сброс кеша"
+
+#: src/classes/Features/CacheBusting.php:57
+msgctxt "\"Cache busting\" setting description line 3"
+msgid "Turn this off only if it causes problems in your environment (e.g. images do not show at all)."
+msgstr "Отключайте это только в том случае, если это вызывает проблемы в вашей среде (например, изображения вообще не отображаются)."
+
+#: src/classes/Features/CacheBusting.php:52
+msgctxt "\"Cache busting\" setting description line 2"
+msgid "Without this option turned on browser might display original image which was cached before instead of the watermarked one."
+msgstr "Если эта опция не включена, браузер может отображать исходное изображение, которое ранее было кэшировано, вместо изображения с водяным знаком."
+
+#: src/classes/Features/CacheBusting.php:47
+msgctxt "\"Cache busting\" setting description line 1"
+msgid "This feature will add version parameter to image file url. This will prevent browser from using cached image."
+msgstr "Эта функция добавит параметр версии к URL-адресу файла изображения. Это предотвратит использование браузером кэшированного изображения."
+
+#: src/views/edit-screen/metaboxes/attachment/watermarks.php:52
+msgid "This image contains watermarks which has been removed:"
+msgstr "Это изображение содержит водяные знаки, которые были удалены:"
+
+#: src/classes/AttachmentProcessor/AttachmentProcessorGD.php:425
+msgid "Could not create temporary image. Please check your server configuration."
+msgstr "Не удалось создать временное изображение. Пожалуйста, проверьте конфигурацию вашего сервера."
+
+#: src/classes/AttachmentProcessor/AttachmentProcessorGD.php:374
+#: src/classes/AttachmentProcessor/AttachmentProcessorGD.php:498
+msgid "Could not create output image. Please check your server configuration."
+msgstr "Не удалось создать выходное изображение. Пожалуйста, проверьте конфигурацию вашего сервера."
+
+#: src/classes/AttachmentProcessor/AttachmentProcessorGD.php:209
+msgid "Could not create output image."
+msgstr "Не удалось создать выходное изображение."
+
+#: src/views/dashboard/pages/tools.php:31
+msgid "There are no image attachments in your Media Library available for watermarking."
+msgstr "В вашей медиатеке нет вложенных изображений, доступных для водяных знаков."
+
+#: src/views/notices/watermarks-number-exceeded-error.php:10
+msgid "You can only configure 2 watermarks. Please edit already existing ones."
+msgstr "Вы можете настроить только 2 водяных знака. Пожалуйста, отредактируйте уже существующие."
+
+#. translators: link to medial library in grid mode with text "Grid Mode"
+#: src/views/notices/auto-watermark-warning.php:20
+msgid "Use %s instead, so you can enable/disable Auto Watermark feature."
+msgstr "Вместо этого используйте %s, чтобы вы могли включать/отключать функцию автоматического водяного знака."
+
+#: src/views/notices/auto-watermark-warning.php:16
+msgctxt "link text for media library in grid mode"
+msgid "Grid Mode"
+msgstr "Режим сетки"
+
+#: src/views/notices/auto-watermark-warning.php:14
+msgid "All images uploaded on this page will be watermarked by Auto Watermark feature."
+msgstr "Все изображения, загруженные на эту страницу, будут снабжены водяными знаками с помощью функции Auto Watermark."
+
+#: src/views/notices/untrash-error.php:10
+msgid "You can only have 2 active watermarks. Please delete some other watermark to restore this one."
+msgstr "У вас может быть только 2 активных водяных знака. Пожалуйста, удалите другой водяной знак, чтобы восстановить этот."
+
+#. translators: watermark name
+#: src/views/dashboard/pages/watermarks.php:37
+msgid "Edit"
+msgstr "Редактировать"
+
+#: src/views/dashboard/pages/permissions.php:39
+msgid "Allow to apply watermarks"
+msgstr "Разрешить применять водяные знаки"
+
+#: src/views/dashboard/pages/permissions.php:33
+msgid "Allow to edit others watermarks"
+msgstr "Разрешить редактировать другие водяные знаки"
+
+#: src/views/dashboard/pages/permissions.php:27
+msgid "Allow to create watermarks"
+msgstr "Разрешить создавать водяные знаки"
+
+#: src/views/dashboard/pages/tools.php:62
+msgid "There are no backed up images in your Media Library."
+msgstr "В вашей медиатеке нет резервных копий изображений."
+
+#. translators: %s is backed up images count
+#: src/views/dashboard/pages/tools.php:51
+msgid "There is %s backed up image in your Media Library."
+msgid_plural "There are %s backed up images in your Media Library."
+msgstr[0] "В вашей медиатеке есть резервная копия изображения %s."
+msgstr[1] "В вашей медиатеке есть резервные копии изображений: %s."
+msgstr[2] "В вашей медиатеке есть резервные копии изображений: %s."
+
+#: src/views/dashboard/pages/tools.php:46
+msgid "Here you can quickly restore backup for all images in Media Library."
+msgstr "Здесь вы можете быстро восстановить резервную копию всех изображений в медиатеке."
+
+#: src/views/dashboard/pages/tools.php:44
+msgid "Restore Backup"
+msgstr "Восстановление резервной копии"
+
+#. translators: %s is a "create watermark" link
+#: src/views/dashboard/pages/tools.php:36
+msgid "There are no watermarks configured. Please %s first."
+msgstr "Водяные знаки не настроены. Пожалуйста, сначала %s."
+
+#: src/views/dashboard/pages/tools.php:34
+msgctxt "link text for new watermark page"
+msgid "create watermark"
+msgstr "создать водяной знак"
+
+#: src/views/dashboard/pages/tools.php:29
+msgid "Note: The same watermark will never get applied twice to the same image. This tool is safe to use even if some of the images are already watermarked."
+msgstr "Примечание. Один и тот же водяной знак никогда не будет применен дважды к одному и тому же изображению. Этот инструмент безопасен в использовании, даже если некоторые изображения уже снабжены водяными знаками."
+
+#: src/views/edit-screen/metaboxes/watermark/placeholders.php:18
+msgid "Example:"
+msgstr "Пример:"
+
+#: src/views/edit-screen/metaboxes/watermark/placeholders.php:10
+msgid "Search placeholders"
+msgstr "Поиск заполнителей"
+
+#: src/views/edit-screen/metaboxes/watermark/watermark-content.php:49
+msgid "You can use placeholders listed in \"Placeholders\" metabox."
+msgstr "Вы можете использовать заполнители, перечисленные в метабоксе «Заполнители»."
+
+#: src/views/edit-screen/metaboxes/watermark/watermark-content.php:39
+msgid "Opacity does not apply to png images."
+msgstr "Непрозрачность не применяется к изображениям png."
+
+#: src/views/edit-screen/metaboxes/watermark/watermark-content.php:22
+msgid "Note: Opacity can be applied to gif and jpg images only."
+msgstr "Примечание. Непрозрачность можно применять только к изображениям в формате gif и jpg."
+
+#: src/views/edit-screen/metaboxes/watermark/applying-rules.php:85
+msgid "If unchecked, Auto Watermark function will depend on the role settings."
+msgstr "Если флажок не установлен, функция Auto Watermark будет зависеть от настроек роли."
+
+#: src/views/edit-screen/metaboxes/watermark/applying-rules.php:83
+msgid "Check this to enable Auto Watermark for all users"
+msgstr "Установите этот флажок, чтобы включить автоматический водяной знак для всех пользователей."
+
+#: src/views/edit-screen/metaboxes/watermark/applying-rules.php:80
+msgid "Allow for all users"
+msgstr "Разрешить для всех пользователей"
+
+#: src/views/edit-screen/metaboxes/watermark/applying-rules.php:53
+msgid "Select which image types should be automatically watermarked"
+msgstr "Выберите, какие типы изображений должны автоматически помечаться водяными знаками."
+
+#: src/views/edit-screen/metaboxes/watermark/applying-rules.php:37
+msgid "Automatically apply this watermark during image upload"
+msgstr "Автоматически применять этот водяной знак при загрузке изображения"
+
+#: src/views/edit-screen/metaboxes/watermark/applying-rules.php:30
+msgid "Auto Watermark option allows to apply watermark automatically during image upload. Below you can configure this behavior."
+msgstr "Опция \"Авто водяной знак\" позволяет автоматически применять водяной знак во время загрузки изображения. Ниже вы можете настроить это поведение."
+
+#: src/views/edit-screen/metaboxes/watermark/applying-rules.php:24
+msgid "Select which image sizes should be watermarked"
+msgstr "Выберите, какие размеры изображений должны быть снабжены водяными знаками"
+
+#: src/views/edit-screen/metaboxes/watermark/preview.php:18
+msgid "Click on image to show fullsize preview."
+msgstr "Нажмите на изображение, чтобы открыть полноразмерный предварительный просмотр."
+
+#: src/views/edit-screen/metaboxes/watermark/preview.php:14
+msgid "Set as preview image"
+msgstr "Сделать изображением для предварительного просмотра"
+
+#: src/views/edit-screen/metaboxes/watermark/preview.php:14
+msgid "Choose preview image"
+msgstr "Выберите изображение для предварительного просмотра"
+
+#: src/views/edit-screen/metaboxes/watermark/alignment.php:58
+#: src/views/edit-screen/metaboxes/watermark/alignment.php:72
+msgid "%"
+msgstr "%"
+
+#: src/views/edit-screen/metaboxes/watermark/alignment.php:57
+#: src/views/edit-screen/metaboxes/watermark/alignment.php:71
+msgid "px"
+msgstr "пикс."
+
+#: src/views/edit-screen/metaboxes/watermark/alignment.php:46
+msgid "Offset"
+msgstr "Компенсировать"
+
+#. translators: watermark name
+#: src/views/dashboard/pages/watermarks.php:41
+#: src/views/edit-screen/metaboxes/watermark/submitdiv.php:18
+msgid "Delete Permanently"
+msgstr "Удалить навсегда"
+
+#: src/views/edit-screen/metaboxes/watermark/scaling.php:30
+msgid "Note: if this option is not checked watermark image will also get scaled up on bigger images which might result in loss of quality/redability."
+msgstr "Примечание: если этот параметр не отмечен, изображение водяного знака также будет увеличено на больших изображениях, что может привести к потере качества/красоте."
+
+#: src/views/edit-screen/metaboxes/watermark/scaling.php:28
+msgid "Check this option to scale watermark only if watermark image is larger than the image being watermarked."
+msgstr "Установите этот флажок, чтобы масштабировать водяной знак только в том случае, если изображение водяного знака больше, чем изображение, на которое наносится водяной знак."
+
+#: src/views/edit-screen/metaboxes/watermark/scaling.php:25
+msgid "Scale down only"
+msgstr "Только уменьшение масштаба"
+
+#: src/views/edit-screen/metaboxes/watermark/scaling.php:18
+msgid "Contain"
+msgstr "Содержать"
+
+#: src/views/edit-screen/metaboxes/watermark/scaling.php:17
+msgid "Cover"
+msgstr "Обложка "
+
+#: src/views/edit-screen/metaboxes/watermark/preview-popup.php:14
+msgid "Watermark preview"
+msgstr "Предварительный просмотр водяного знака"
+
+#: src/views/edit-screen/metaboxes/attachment/used-as-watermark.php:10
+msgid "This image is used as watermark image in the following watermarks:"
+msgstr "Это изображение используется в качестве изображения водяного знака в следующих водяных знаках:"
+
+#: src/views/edit-screen/metaboxes/attachment/watermarks.php:48
+msgid "Create watermark"
+msgstr "Создать водяной знак"
+
+#: src/views/edit-screen/metaboxes/attachment/watermarks.php:47
+msgid "There are no watermarks configured."
+msgstr "Водяные знаки не настроены."
+
+#: src/views/edit-screen/metaboxes/attachment/watermarks.php:34
+msgid "Apply remaining watermarks"
+msgstr "Применить оставшиеся водяные знаки"
+
+#: src/views/edit-screen/metaboxes/attachment/watermarks.php:32
+msgid "Apply all watermarks"
+msgstr "Применить все водяные знаки"
+
+#: src/views/edit-screen/metaboxes/attachment/watermarks.php:20
+msgid "Apply"
+msgstr "Применять"
+
+#: src/views/edit-screen/metaboxes/attachment/watermarks.php:18
+msgid "Applied"
+msgstr "Применяемый"
+
+#: src/classes/Placeholders/DateTime/Date.php:25
+msgid "Current date"
+msgstr "Текущая дата"
+
+#: src/classes/Placeholders/Blog/AdminEmail.php:26
+msgid "admin@example.com"
+msgstr "admin@example.com"
+
+#: src/classes/Placeholders/Blog/AdminEmail.php:25
+msgid "Admin email"
+msgstr "Электронная почта администратора"
+
+#: src/classes/Placeholders/Blog/BlogName.php:26
+msgid "John Doe's Blog"
+msgstr "Блог Джона Доу"
+
+#: src/classes/Placeholders/Blog/BlogName.php:25
+msgid "Blog name"
+msgstr "Название блога"
+
+#: src/classes/Placeholders/Blog/BlogUrl.php:26
+msgid "http://example.com"
+msgstr "http://example.com"
+
+#: src/classes/Placeholders/Blog/BlogUrl.php:25
+msgid "Blog URL"
+msgstr "URL-адрес блога"
+
+#: src/classes/Placeholders/User/UserID.php:25
+msgid "User ID"
+msgstr "ID пользователя"
+
+#: src/classes/Placeholders/User/UserEmail.php:25
+msgid "User email"
+msgstr "Электронная почта пользователя"
+
+#: src/classes/Placeholders/User/UserDisplayName.php:25
+msgid "User display name"
+msgstr "Отображаемое имя пользователя"
+
+#: src/classes/Placeholders/User/UserLogin.php:25
+msgid "User login"
+msgstr "Логин пользователя"
+
+#: src/classes/Placeholders/User/UserFirstName.php:25
+msgid "User first name"
+msgstr "Имя пользователя"
+
+#: src/classes/Placeholders/User/UserLastName.php:25
+msgid "User last name"
+msgstr "Фамилия пользователя"
+
+#: src/classes/Placeholders/User/UserNicename.php:25
+msgid "User nicename"
+msgstr "Имя пользователя"
+
+#: src/classes/Placeholders/User/UserUrl.php:25
+msgid "User website URL"
+msgstr "URL сайта пользователя"
+
+#: src/classes/Placeholders/User/UserRole.php:25
+msgid "User role"
+msgstr "Роль пользователя"
+
+#: src/classes/Placeholders/Resolver.php:69
+msgid "Placeholder must be an instance of abstract Placeholder class."
+msgstr "Placeholder должен быть экземпляром абстрактного класса Placeholder."
+
+#: src/classes/Placeholders/Attachment/AttachmentSize.php:26
+msgid "2 MB"
+msgstr "2 МБ"
+
+#: src/classes/Placeholders/Attachment/AttachmentSize.php:25
+msgid "Attachment size"
+msgstr "Размер вложения"
+
+#: src/classes/Placeholders/Attachment/AttachmentUploadDate.php:25
+msgid "Attachment upload date"
+msgstr "Дата загрузки вложения"
+
+#: src/classes/Placeholders/Attachment/AttachmentHeight.php:25
+msgid "Attachment height"
+msgstr "Высота крепления"
+
+#: src/classes/Placeholders/Attachment/AttachmentID.php:25
+msgid "Attachment ID"
+msgstr "ID вложения"
+
+#: src/classes/Placeholders/Attachment/AttachmentTitle.php:26
+msgid "Forest landscape"
+msgstr "Лесной пейзаж"
+
+#: src/classes/Placeholders/Attachment/AttachmentTitle.php:25
+msgid "Attachment title"
+msgstr "Название вложения"
+
+#: src/classes/Placeholders/Attachment/AttachmentWidth.php:25
+msgid "Attachment width"
+msgstr "Ширина крепления"
+
+#: src/classes/Placeholders/Attachment/AttachmentMimeType.php:25
+msgid "Attachment MIME type"
+msgstr "MIME-тип вложения"
+
+#: src/classes/Placeholders/Attachment/AttachmentDirectUrl.php:26
+msgid "http://example.com/wp-content/uploads/2018/02/forest-landscape.jpg"
+msgstr "http://example.com/wp-content/uploads/2018/02/forest-landscape.jpg"
+
+#: src/classes/Placeholders/Attachment/AttachmentDirectUrl.php:25
+msgid "Attachment direct URL"
+msgstr "Прямой URL вложения"
+
+#: src/classes/Placeholders/Attachment/AttachmentPage.php:26
+msgid "http://example.com/forest-landscape"
+msgstr "http://example.com/forest-landscape"
+
+#: src/classes/Placeholders/Attachment/AttachmentPage.php:25
+msgid "Attachment page URL"
+msgstr "URL-адрес страницы вложения"
+
+#: src/classes/Placeholders/User/UserLogin.php:26
+#: src/classes/Placeholders/Author/AuthorLogin.php:26
+msgid "johndoe"
+msgstr "Джон Доу"
+
+#: src/classes/Placeholders/Author/AuthorLogin.php:25
+msgid "Author login"
+msgstr "Логин автора"
+
+#: src/classes/Placeholders/User/UserLastName.php:26
+#: src/classes/Placeholders/Author/AuthorLastName.php:26
+msgid "Doe"
+msgstr "Доу"
+
+#: src/classes/Placeholders/Author/AuthorLastName.php:25
+msgid "Author last name"
+msgstr "Фамилия автора"
+
+#: src/classes/Placeholders/User/UserNicename.php:26
+#: src/classes/Placeholders/Author/AuthorNicename.php:26
+msgid "Johhnie"
+msgstr "Джонни"
+
+#: src/classes/Placeholders/Author/AuthorNicename.php:25
+msgid "Author nicename"
+msgstr "Имя автора"
+
+#: src/classes/Placeholders/User/UserFirstName.php:26
+#: src/classes/Placeholders/Author/AuthorFirstName.php:26
+msgid "John"
+msgstr "Джон"
+
+#: src/classes/Placeholders/Author/AuthorFirstName.php:25
+msgid "Author first name"
+msgstr "Имя автора"
+
+#: src/classes/Placeholders/User/UserDisplayName.php:26
+#: src/classes/Placeholders/Author/AuthorDisplayName.php:26
+msgid "John - fast finegrs - Doe"
+msgstr "Джон - быстрые пальцы - Доу"
+
+#: src/classes/Placeholders/Author/AuthorDisplayName.php:25
+msgid "Author display name"
+msgstr "Отображаемое имя автора"
+
+#: src/classes/Placeholders/User/UserEmail.php:26
+#: src/classes/Placeholders/Author/AuthorEmail.php:26
+msgid "john.doe@example.com"
+msgstr "john.doe@example.com"
+
+#: src/classes/Placeholders/Author/AuthorEmail.php:25
+msgid "Author email"
+msgstr "Email автора"
+
+#: src/classes/Placeholders/User/UserRole.php:26
+#: src/classes/Placeholders/Author/AuthorRole.php:26
+msgid "Subscriber"
+msgstr "Подписчик"
+
+#: src/classes/Placeholders/Author/AuthorRole.php:25
+msgid "Author role"
+msgstr "Роль автора"
+
+#: src/classes/Placeholders/User/UserUrl.php:26
+#: src/classes/Placeholders/Author/AuthorUrl.php:26
+msgid "johndoe.com"
+msgstr "johndoe.com"
+
+#: src/classes/Placeholders/Author/AuthorUrl.php:25
+msgid "Author website URL"
+msgstr "URL сайта автора"
+
+#: src/classes/Placeholders/Author/AuthorID.php:25
+msgid "Author ID"
+msgstr "ID автора"
+
+#: src/classes/Helpers/Image.php:27
+msgid "Full Size"
+msgstr "Полный размер"
+
+#: src/classes/Helpers/Image.php:26
+msgid "Large"
+msgstr "Большой"
+
+#: src/classes/Helpers/Image.php:25
+msgid "Intermediate"
+msgstr "промежуточный"
+
+#: src/classes/Helpers/Image.php:24
+msgid "Medium"
+msgstr "Средний"
+
+#: src/classes/Helpers/Image.php:23
+msgid "Thumbnail"
+msgstr "Миниатюра"
+
+#: src/classes/Core/Assets.php:250
+msgid "OK"
+msgstr "Ок"
+
+#: src/classes/Core/Assets.php:249
+msgid "Yes"
+msgstr "Да"
+
+#: src/classes/Core/Assets.php:186
+msgid "No backup available for any of selected items."
+msgstr "Резервная копия недоступна ни для одного из выбранных элементов."
+
+#: src/classes/Core/Assets.php:185
+msgid "None from the selected items qualified for watermarking."
+msgstr "Ни один из выбранных элементов не подходит для водяных знаков."
+
+#: src/classes/Core/Assets.php:184
+msgctxt "label for attachments which has no backup to restore"
+msgid "No backup available"
+msgstr "Резервная копия недоступна"
+
+#: src/classes/Core/Assets.php:183
+msgctxt "label for image used as watermark"
+msgid "Used as watermark"
+msgstr "Используется как водяной знак"
+
+#: src/classes/Core/Assets.php:182
+msgctxt "label for unsupported attachment type (other than image)"
+msgid "Not supported"
+msgstr "Не поддерживается"
+
+#: src/classes/Core/Assets.php:180 src/views/dashboard/pages/tools.php:19
+msgid "Select Watermark"
+msgstr "Выберите водяной знак"
+
+#: src/classes/Core/Assets.php:176
+msgid "Watermark Selected"
+msgstr "Водяной знак выбран"
+
+#: src/classes/Core/Assets.php:175
+msgid "No items selected"
+msgstr "Элементы не выбраны"
+
+#. translators: %1&s - image title, %2&s - error content
+#: src/classes/Core/Assets.php:156 src/classes/Core/Assets.php:196
+msgid "An error occured while processing %1$s: %2$s"
+msgstr "При обработке %1$s произошла ошибка: %2$s"
+
+#. translators: watermarked images number
+#: src/classes/Core/Assets.php:154 src/classes/Core/Assets.php:194
+msgid "Successfully restored %s images."
+msgstr "Успешно восстановлено %s изображений."
+
+#. translators: watermarked images number
+#: src/classes/Core/Assets.php:152 src/classes/Core/Assets.php:192
+msgid "Successfully watermarked %s images."
+msgstr "Успешно добавлены водяные знаки на %s изображений."
+
+#. translators: watermarked images number
+#: src/classes/Core/Assets.php:150 src/classes/Core/Assets.php:190
+msgid "Restored %s images"
+msgstr "Восстановлено %s изображений"
+
+#. translators: watermarked images number
+#: src/classes/Core/Assets.php:148 src/classes/Core/Assets.php:188
+msgid "Watermarked %s images"
+msgstr "%s изображений с водяными знаками"
+
+#: src/classes/Core/Assets.php:146
+msgid "There are no backed up images."
+msgstr "Резервных изображений нет."
+
+#: src/classes/Core/Assets.php:145
+msgid "There are no images eligible for watermarking."
+msgstr "Нет изображений, подходящих для водяных знаков."
+
+#. translators: watermark name
+#: src/classes/Core/Assets.php:144
+msgid "You are about to permanently delete \"%s\". Are you sure?"
+msgstr "Вы собираетесь безвозвратно удалить \"%s\". Уверены ли вы?"
+
+#: src/classes/Core/Installer.php:420
+msgid "Text Watermark"
+msgstr "Текстовый водяной знак"
+
+#: src/classes/Core/Installer.php:369
+msgid "Image Watermark"
+msgstr "Водяной знак изображения"
+
+#. translators: %s: object type.
+#: src/classes/Core/Manager.php:73
+msgid "Object of type \"%s\" cannot be created."
+msgstr "Объект типа \"%s\" не может быть создан."
+
+#. translators: %1$s: child class name, %2$s: parent class name.
+#: src/classes/Core/Manager.php:71
+msgid "Class \"%1$s\" must implement %2$s interface."
+msgstr "Класс \"%1$s\" должен реализовывать интерфейс %2$s."
+
+#. translators: %1$s: child class name, %2$s: parent class name.
+#: src/classes/Core/Manager.php:69
+msgid "Class \"%1$s\" must extend %2$s."
+msgstr "Класс \"%1$s\" должен расширять %2$s."
+
+#. translators: %s: class name.
+#: src/classes/Core/Manager.php:67
+msgid "Class \"%s\" does not exist."
+msgstr "Класс \"%s\" не существует."
+
+#. translators: view name
+#: src/classes/Core/View.php:102
+msgid "View not found"
+msgstr "Вид не найден"
+
+#. translators: view name
+#: src/classes/Core/View.php:102
+msgid "View file does not exist: %s"
+msgstr "Файл просмотра не существует: %s"
+
+#. translators: argument type
+#: src/classes/Core/View.php:95
+msgid "Invalid view name type"
+msgstr "Недопустимый тип имени представления"
+
+#. translators: argument type
+#: src/classes/Core/View.php:95
+msgid "View name should be a string, %s given."
+msgstr "Имя представления должно быть строкой, заданной как %s."
+
+#: src/classes/Watermark/Ajax.php:219 src/classes/Core/Assets.php:135
+#: src/classes/Core/Assets.php:252
+msgid "Something went wrong. Please refresh the page and try again."
+msgstr "Что-то пошло не так. Пожалуйста, обновите страницу и повторите попытку."
+
+#: src/classes/Watermark/Ajax.php:188
+msgid "Invalid request."
+msgstr "Неверный запрос."
+
+#: src/classes/Watermark/Ajax.php:167
+msgid "Something went wrong while saving temporary data."
+msgstr "Что-то пошло не так при сохранении временных данных."
+
+#: src/classes/Watermark/Ajax.php:156
+msgid "No watermark data to save."
+msgstr "Нет данных водяного знака для сохранения."
+
+#: src/classes/Watermark/Ajax.php:137
+msgid "Original image has been restored."
+msgstr "Исходное изображение восстановлено."
+
+#: src/classes/Watermark/Ajax.php:128
+msgid "You don't have permission to restore backup."
+msgstr "У вас нет разрешения на восстановление резервной копии."
+
+#: src/classes/Watermark/Ajax.php:102
+msgid "All watermarks has been applied."
+msgstr "Все водяные знаки были применены."
+
+#: src/classes/Watermark/Ajax.php:68
+msgid "Watermark has been applied."
+msgstr "Водяной знак был применен."
+
+#: src/classes/Watermark/Ajax.php:61 src/classes/Watermark/Ajax.php:94
+msgid "You don't have permission to apply watermarks."
+msgstr "У вас нет разрешения на применение водяных знаков."
+
+#: src/classes/Watermark/Ajax.php:51 src/classes/Watermark/Ajax.php:87
+#: src/classes/Watermark/Ajax.php:121
+msgid "Something went wrong. Please try again."
+msgstr "Что-то пошло не так. Пожалуйста, попробуйте еще раз."
+
+#: src/classes/Watermark/Handler.php:453
+msgctxt "Placeholder for watermark text preview if no text specified."
+msgid "no_text"
+msgstr "без_текста"
+
+#. translators: watermark name, image size, original error message.
+#: src/classes/Watermark/Handler.php:310
+msgid "Watermark \"%1$s\" couldn't be applied for \"%2$s\" image size: %3$s"
+msgstr "Не удалось применить водяной знак \"%1$s\" для размера изображения \"%2$s\": %3$s"
+
+#: src/classes/Watermark/Handler.php:239
+msgid "You try to watermark an item that doesn't exist. Please refresh the page and try again."
+msgstr "Вы пытаетесь поставить водяной знак на несуществующий предмет. Пожалуйста, обновите страницу и повторите попытку."
+
+#. translators: restored from trash watermarks number
+#: src/classes/Watermark/PostType.php:183
+msgid "%s watermark restored from the Trash."
+msgid_plural "%s watermarks restored from the Trash."
+msgstr[0] "Водяной знак %s восстановлен из корзины."
+msgstr[1] "%s водяных знаков восстановлено из корзины."
+msgstr[2] "%s водяных знаков восстановлено из корзины."
+
+#. translators: moved to trash watermarks number
+#: src/classes/Watermark/PostType.php:181
+msgid "%s watermark moved to the Trash."
+msgid_plural "%s watermarks moved to the Trash."
+msgstr[0] "Водяной знак %s перемещен в корзину."
+msgstr[1] "Водяные знаки: %s перемещены в корзину."
+msgstr[2] "Водяные знаки: %s перемещены в корзину."
+
+#. translators: deleted watermarks number
+#: src/classes/Watermark/PostType.php:179
+msgid "%s watermark permanently deleted."
+msgid_plural "%s watermarks permanently deleted."
+msgstr[0] "Водяной знак %s удален без возможности восстановления."
+msgstr[1] "%s водяных знаков удалены без возможности восстановления."
+msgstr[2] "%s водяных знаков удалены без возможности восстановления."
+
+#. translators: not updated watermarks number
+#: src/classes/Watermark/PostType.php:177
+msgid "%s watermark not updated, somebody is editing it."
+msgid_plural "%s watermarks not updated, somebody is editing them."
+msgstr[0] "Водяной знак %s не обновлен, кто-то редактирует его."
+msgstr[1] "Водяные знаки %s не обновлены, кто-то редактирует их."
+msgstr[2] "Водяные знаки %s не обновлены, кто-то редактирует их."
+
+#: src/classes/Watermark/PostType.php:175
+msgid "1 watermarkt not updated, somebody is editing it."
+msgstr "1 водяной знак не обновлен, кто-то его редактирует."
+
+#. translators: updated watermarks number
+#: src/classes/Watermark/PostType.php:174
+msgid "%s watermark updated."
+msgid_plural "%s watermarks updated."
+msgstr[0] "Обновлен водяной знак %s."
+msgstr[1] "%s водяных знаков обновлены."
+msgstr[2] "%s водяных знаков обновлены."
+
+#: src/classes/Watermark/PostType.php:154
+msgid "Watermark draft updated."
+msgstr "Обновлен черновик водяного знака."
+
+#: src/classes/Watermark/PostType.php:152
+msgid "M j, Y @ G:i"
+msgstr "d.m.Y, H:i"
+
+#: src/classes/Watermark/PostType.php:151
+msgid "Watermark scheduled for: <strong>%1$s</strong>."
+msgstr "Водяной знак запланирован на: <strong>%1$s</strong>."
+
+#: src/classes/Watermark/PostType.php:149
+msgid "Watermark submitted."
+msgstr "Водяной знак отправлен."
+
+#: src/classes/Watermark/PostType.php:147
+#: src/classes/Watermark/PostType.php:148
+msgid "Watermark saved."
+msgstr "Водяной знак сохранен."
+
+#: src/classes/Watermark/PostType.php:146
+msgid "Watermark restored to revision from %s"
+msgstr "Водяной знак восстановлен до версии %s"
+
+#: src/classes/Watermark/PostType.php:144
+msgid "Custom field deleted."
+msgstr "Пользовательское поле удалено."
+
+#: src/classes/Watermark/PostType.php:143
+msgid "Custom field updated."
+msgstr "Пользовательское поле обновлено."
+
+#: src/classes/Watermark/PostType.php:142
+#: src/classes/Watermark/PostType.php:145
+msgid "Watermark updated."
+msgstr "Обновлен водяной знак."
+
+#: src/classes/Watermark/PostType.php:64
+msgid "No watermarks found in Trash."
+msgstr "Водяные знаки в корзине не найдены."
+
+#: src/classes/Watermark/PostType.php:63
+msgid "No watermarks found."
+msgstr "Водяные знаки не обнаружены."
+
+#: src/classes/Watermark/PostType.php:62
+msgid "Parent Watermarks:"
+msgstr "Родительские водяные знаки:"
+
+#: src/classes/Watermark/PostType.php:61
+msgid "Search Watermarks"
+msgstr "Поиск водяных знаков"
+
+#: src/classes/Watermark/PostType.php:60 src/classes/Core/Assets.php:181
+#: src/views/dashboard/pages/tools.php:21
+msgid "All Watermarks"
+msgstr "Все водяные знаки"
+
+#: src/classes/Watermark/PostType.php:59
+msgid "View Watermark"
+msgstr "Посмотреть водяной знак"
+
+#: src/classes/Watermark/PostType.php:58
+msgid "Edit Watermark"
+msgstr "Изменить водяной знак"
+
+#: src/classes/Watermark/PostType.php:57
+msgid "New Watermark"
+msgstr "Новый водяной знак"
+
+#: src/classes/Watermark/PostType.php:56
+#: src/views/dashboard/pages/watermarks.php:51
+msgid "Add New Watermark"
+msgstr "Добавить новый водяной знак"
+
+#: src/classes/Watermark/PostType.php:55
+msgctxt "Watermark"
+msgid "Add New"
+msgstr "Добавить новый"
+
+#: src/classes/Watermark/PostType.php:54
+msgctxt "add new on admin bar"
+msgid "Watermark"
+msgstr "Водяной знак"
+
+#: src/classes/Watermark/PostType.php:53
+msgctxt "admin menu"
+msgid "Watermarks"
+msgstr "Водяные знаки"
+
+#: src/classes/Watermark/PostType.php:52
+msgctxt "post type singular name"
+msgid "Watermark"
+msgstr "Водяной знак"
+
+#: src/classes/Watermark/PostType.php:51
+msgctxt "post type general name"
+msgid "Watermarks"
+msgstr "Водяные знаки"
+
+#: src/classes/Dashboard/Watermarks.php:39
+msgid "Watermark has been deleted."
+msgstr "Водяной знак удален."
+
+#: src/classes/Dashboard/Tools.php:37
+msgid "Settings saved."
+msgstr "Настройки сохранены."
+
+#: src/classes/Dashboard/Tools.php:23
+msgid "Tools"
+msgstr "Инструменты"
+
+#: src/classes/Dashboard/Permissions.php:86
+msgid "Permissions saved."
+msgstr "Разрешения сохранены."
+
+#: src/classes/Dashboard/Permissions.php:22
+msgid "Permissions"
+msgstr "Разрешения"
+
+#: src/classes/AttachmentProcessor/AttachmentProcessorGD.php:538
+msgid "Something went wrong while applying watermark text."
+msgstr "Что-то пошло не так при применении текста водяного знака."
+
+#: src/classes/AttachmentProcessor/AttachmentProcessorGD.php:521
+msgid "Something went wrong while allocating text color."
+msgstr "Что-то пошло не так при назначении цвета текста."
+
+#: src/classes/AttachmentProcessor/AttachmentProcessorGD.php:483
+msgid "Something went wrong while applying watermark image."
+msgstr "Что-то пошло не так при применении изображения водяного знака."
+
+#: src/classes/AttachmentProcessor/AttachmentProcessorGD.php:386
+msgid "Something went wrong while processing watermark image."
+msgstr "Что-то пошло не так при обработке изображения водяного знака."
+
+#: src/classes/AttachmentProcessor/AttachmentProcessorGD.php:380
+msgid "Watermark image file does not exist."
+msgstr "Файл изображения водяного знака не существует."
+
+#. translators: font name
+#: src/classes/AttachmentProcessor/AttachmentProcessorGD.php:201
+#: src/classes/AttachmentProcessor/AttachmentProcessorGD.php:505
+msgid "Font \"%s\" could not be found. "
+msgstr "Шрифт \"%s\" не найден. "
+
+#: src/classes/AttachmentProcessor/AttachmentProcessorGD.php:194
+msgid "Watermark text not specified."
+msgstr "Текст водяного знака не указан."
+
+#: src/classes/AttachmentProcessor/AttachmentProcessorGD.php:190
+msgid "Text preview can be only generated for text watermark."
+msgstr "Предварительный просмотр текста может быть создан только для текстового водяного знака."
+
+#: src/classes/AttachmentProcessor/AttachmentProcessorGD.php:186
+msgid "Watermark should be instance of Easywatermark\\Watermark\\Watermark."
+msgstr "Водяной знак должен быть экземпляром Easywatermark\\Watermark\\Watermark."
+
+#. translators: %s: object type.
+#: src/classes/AttachmentProcessor/Manager.php:46
+msgid "Attachment processor of type \"%s\" cannot be created."
+msgstr "Процессор вложений типа \"%s\" не может быть создан."
+
+#. translators: %1$s: child class name, %2$s: parent class name.
+#: src/classes/AttachmentProcessor/Manager.php:44
+msgid "Attachment processor \"%1$s\" must extend %2$s."
+msgstr "Процессор вложений \"%1$s\" должен расширять %2$s."
+
+#. translators: %s: class name.
+#: src/classes/AttachmentProcessor/Manager.php:42
+msgid "Attachment processor class \"%s\" does not exist."
+msgstr "Класс процессора вложений \"%s\" не существует."
+
+#: src/classes/AttachmentProcessor/Manager.php:33
+msgid "GD"
+msgstr "GD"
+
+#: src/classes/AttachmentProcessor/AttachmentProcessor.php:120
+msgid "Watermark should be an instance of EasyWatermark\\Watermark\\Watermark class."
+msgstr "Водяной знак должен быть экземпляром класса EasyWatermark\\Watermark\\Watermark."
+
+#: src/classes/AttachmentProcessor/AttachmentProcessor.php:73
+msgid "Params should be an array."
+msgstr "Params должен быть массивом."
+
+#: src/classes/Metaboxes/Watermark/Alignment.php:24
+#: src/views/edit-screen/metaboxes/watermark/alignment.php:13
+msgid "Alignment"
+msgstr "Выравнивание"
+
+#: src/classes/Metaboxes/Watermark/Preview.php:119
+msgid "Saving preview image failed."
+msgstr "Не удалось сохранить изображение для предварительного просмотра."
+
+#: src/classes/Metaboxes/Watermark/Preview.php:103
+msgid "No watermark id."
+msgstr "Нет идентификатора водяного знака."
+
+#: src/classes/Metaboxes/Watermark/Preview.php:97
+msgid "No attachment id."
+msgstr "Нет идентификатора вложения."
+
+#: src/classes/Metaboxes/Watermark/Preview.php:66
+msgid "Change preview image"
+msgstr "Изменить изображение для предварительного просмотра"
+
+#: src/classes/Metaboxes/Watermark/Preview.php:65
+msgid "Select preview image"
+msgstr "Выберите изображение для предварительного просмотра"
+
+#: src/classes/Metaboxes/Watermark/TextOptions.php:27
+msgid "Text Options"
+msgstr "Настройки текста"
+
+#: src/classes/Watermark/Hooks.php:148
+#: src/classes/Metaboxes/Watermark/WatermarkContent.php:25
+#: src/classes/Core/Assets.php:177
+msgid "Watermark"
+msgstr "Водяной знак"
+
+#: src/classes/Metaboxes/Watermark/Submitdiv.php:24
+#: src/views/edit-screen/metaboxes/watermark/submitdiv.php:23
+msgid "Save"
+msgstr "Сохранить"
+
+#: src/classes/Metaboxes/Watermark/Scaling.php:24
+msgid "Scaling"
+msgstr "масштабирующий"
+
+#: src/classes/Metaboxes/Watermark/ApplyingRules.php:28
+msgid "Applying Rules"
+msgstr "Применение правил"
+
+#: src/classes/Watermark/PostType.php:69
+#: src/classes/Metaboxes/Attachment/Watermarks.php:33
+#: src/classes/Dashboard/Watermarks.php:25
+msgid "Watermarks"
+msgstr "Водяные знаки"
+
+#: src/classes/Features/SrcsetFilter.php:65
+msgctxt "\"Filter srcset\" setting description line 3"
+msgid "With this option enabled srcset attribute will only contain image sizes watermarked the same way."
+msgstr "Если эта опция включена, атрибут srcset будет содержать только размеры изображений, отмеченные водяными знаками таким же образом."
+
+#: src/classes/Features/SrcsetFilter.php:60
+msgctxt "\"Filter srcset\" setting description line 2"
+msgid "This is good in general but it might cause problems if some watermarks are applied only to certain image sizes."
+msgstr "В целом это хорошо, но могут возникнуть проблемы, если некоторые водяные знаки применяются только к определенным размерам изображений."
+
+#: src/classes/Features/SrcsetFilter.php:55
+msgctxt "\"Filter srcset\" setting description line 1"
+msgid "Srcset attribute contains information about other image sizes and lets the browser decide which image to display based on the screen size."
+msgstr "Атрибут Srcset содержит информацию о других размерах изображений и позволяет браузеру решать, какое изображение отображать, исходя из размера экрана."
+
+#: src/classes/Features/SrcsetFilter.php:51
+msgctxt "Continuation of \"Filter srcset\" setting label."
+msgid "for watermarked images"
+msgstr "для изображений с водяными знаками"
+
+#: src/classes/Features/SrcsetFilter.php:50
+msgid "Filter srcset"
+msgstr "Исходный набор фильтров"
+
+#. translators: field variable type
+#: src/classes/Settings/Section.php:122
+msgid "Field must be an instance of EasyWatermark\\Settings\\Field. %s given"
+msgstr "Поле должно быть экземпляром EasyWatermark\\Settings\\Field. %s дано"
+
+#. translators: field variable type
+#: src/classes/Settings/Section.php:106
+msgid "Settings must be an instance of EasyWatermark\\Settings\\Settings. %s given"
+msgstr "Настройки должны быть экземпляром EasyWatermark\\Settings\\Settings. %s дано"
+
+#: src/classes/Settings/Settings.php:102
+msgid "Set jpeg quality from 0 (worst quality, smaller file) to 100 (best quality, biggest file). Set -1 for default quality."
+msgstr "Установите качество jpeg от 0 (наихудшее качество, файл меньшего размера) до 100 (наилучшее качество, самый большой файл). Установите -1 для качества по умолчанию."
+
+#. translators: section variable type
+#: src/classes/Settings/Settings.php:134 src/classes/Settings/Field.php:188
+msgid "Section must be an instance of EasyWatermark\\Settings\\Section. %s given"
+msgstr "Раздел должен быть экземпляром EasyWatermark\\Settings\\Section. %s дано"
+
+#: src/classes/Backup/LocalBackupper.php:152
+msgid "Could not create backup directory."
+msgstr "Не удалось создать каталог резервного копирования."
+
+#: src/classes/Backup/LocalBackupper.php:105
+msgid "Could not remove backup file."
+msgstr "Не удалось удалить файл резервной копии."
+
+#: src/classes/Backup/LocalBackupper.php:82
+msgid "Could not restore attachment."
+msgstr "Не удалось восстановить вложение."
+
+#: src/classes/Backup/LocalBackupper.php:59
+msgid "Could not copy attachment file to backup directory."
+msgstr "Не удалось скопировать файл вложения в каталог резервного копирования."
+
+#: src/classes/Backup/Manager.php:100
+msgid "Backupper"
+msgstr "Резервное копирование"
+
+#: src/classes/Backup/Manager.php:83
+msgid "Enable backup"
+msgstr "Включить резервное копирование"
+
+#. translators: %s: object type.
+#: src/classes/Backup/Manager.php:54
+msgid "Backupper of type \"%s\" cannot be created."
+msgstr "Резервная копия типа \"%s\" не может быть создана."
+
+#. translators: %1$s: child class name, %2$s: parent class name.
+#: src/classes/Backup/Manager.php:52
+msgid "Backupper \"%1$s\" must implement %2$s interface."
+msgstr "Резервная копия \"%1$s\" должна реализовывать интерфейс %2$s."
+
+#. translators: %s: class name.
+#: src/classes/Backup/Manager.php:50
+msgid "Backupper class \"%s\" does not exist."
+msgstr "Класс резервного копирования \"%s\" не существует."
+
+#: src/classes/Backup/Manager.php:41
+msgid "Local Backup"
+msgstr "Локальное резервное копирование"
+
+#: src/bootstrap.php:20
+msgid "Easy Watermark &rsaquo; Error"
+msgstr "Easy Watermark › Ошибка"
+
+#. Author URI of the plugin
+msgid "https://bracketspace.com/"
+msgstr "https://bracketspace.com/"
+
+#. Author of the plugin
+msgid "BracketSpace"
+msgstr "BracketSpace"
+
+#. Description of the plugin
+msgid "This plugin can automatically add image and text watermark to pictures as they are uploaded to WordPress media library. You can also watermark existing images manually (all at once or an every single image). Watermark image can be a png, gif (alpha channel supported in both cases) or jpg. It's also possibile to set watermark opacity (doesn't apply to png with alpha channel). For text watermark you can select font, set color, size, angle and opacity."
+msgstr "Этот плагин может автоматически добавлять изображения и текстовые водяные знаки к изображениям, когда они загружаются в медиатеку WordPress. Вы также можете добавлять водяные знаки к существующим изображениям вручную (все сразу или каждое отдельное изображение). Изображение водяного знака может быть в формате png, gif (альфа-канал поддерживается в обоих случаях) или jpg. Также возможно установить непрозрачность водяного знака (не относится к png с альфа-каналом). Для текстового водяного знака вы можете выбрать шрифт, установить цвет, размер, угол и непрозрачность."
+
+#: src/classes/Core/Assets.php:179 src/classes/Core/Assets.php:251
+msgid "Cancel"
+msgstr "Отмена"
+
+#: src/views/dashboard/pages/permissions.php:50
+#: src/views/dashboard/pages/settings.php:19
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: src/views/edit-screen/metaboxes/watermark/text-options.php:39
+msgid "Text angle"
+msgstr "Наклон текста"
+
+#: src/views/edit-screen/metaboxes/watermark/text-options.php:28
+msgid "Text size"
+msgstr "Размер текста"
+
+#: src/views/edit-screen/metaboxes/watermark/text-options.php:23
+msgid "Text color"
+msgstr "Цвет текста"
+
+#: src/views/edit-screen/metaboxes/watermark/text-options.php:13
+msgid "Font"
+msgstr "Шрифт"
+
+#: src/classes/Metaboxes/Watermark/Preview.php:38
+msgid "Preview"
+msgstr "Предпросмотр"
+
+#: src/views/edit-screen/metaboxes/watermark/watermark-content.php:48
+msgid "Watermark text"
+msgstr "Текст водяного знака"
+
+#: src/views/edit-screen/metaboxes/watermark/text-options.php:50
+#: src/views/edit-screen/metaboxes/watermark/watermark-content.php:31
+msgid "Opacity"
+msgstr "Непрозрачность"
+
+#: src/views/edit-screen/metaboxes/watermark/alignment.php:64
+msgid "y"
+msgstr "y"
+
+#: src/views/edit-screen/metaboxes/watermark/alignment.php:50
+msgid "x"
+msgstr "x"
+
+#: src/views/edit-screen/metaboxes/watermark/scaling.php:34
+msgid "Scale"
+msgstr "Шкала"
+
+#: src/views/edit-screen/metaboxes/watermark/scaling.php:20
+msgid "Fit to height"
+msgstr "Подогнать по высоте"
+
+#: src/views/edit-screen/metaboxes/watermark/scaling.php:19
+msgid "Fit to width"
+msgstr "Подогнать по ширине"
+
+#: src/views/edit-screen/metaboxes/watermark/scaling.php:16
+msgid "None"
+msgstr "Никто"
+
+#: src/views/edit-screen/metaboxes/watermark/scaling.php:13
+msgid "Scaling mode"
+msgstr "Режим масштабирования"
+
+#: src/views/edit-screen/metaboxes/watermark/watermark-content.php:26
+msgid "Click on image to change it."
+msgstr "Нажмите на изображение, чтобы изменить его."
+
+#: src/views/edit-screen/metaboxes/watermark/watermark-content.php:21
+msgid "Select/Upload Image"
+msgstr "Выбрать/загрузить изображение"
+
+#: src/views/edit-screen/metaboxes/watermark/watermark-content.php:21
+msgid "Set as Watermark Image"
+msgstr "Сделать водяным знаком"
+
+#: src/views/edit-screen/metaboxes/watermark/watermark-content.php:21
+msgid "Choose Watermark Image"
+msgstr "Выберите изображение водяного знака"
+
+#: src/views/edit-screen/metaboxes/watermark/applying-rules.php:63
+msgid "uploaded through the media library page"
+msgstr "загружено через страницу медиатеки"
+
+#: src/views/edit-screen/metaboxes/watermark/applying-rules.php:62
+msgid "Unattached Images"
+msgstr "Неприкрепленные изображения"
+
+#: src/views/edit-screen/metaboxes/watermark/applying-rules.php:76
+msgid "Select what post type attachments should be automatically watermarked"
+msgstr "Выберите, какие вложения типа сообщений должны автоматически помечаться водяными знаками."
+
+#: src/views/edit-screen/metaboxes/watermark/applying-rules.php:57
+msgid "Post types"
+msgstr "Типы записей"
+
+#: src/views/dashboard/pages/permissions.php:11
+msgid "Select, which user roles can have a permission to apply watermarks (only roles with permission to upload files are listed here)"
+msgstr "Выберите, какие роли пользователей могут иметь разрешение на применение водяных знаков (здесь перечислены только роли с разрешением на загрузку файлов)"
+
+#: src/classes/Settings/Settings.php:100
+msgid "Jpeg Quality"
+msgstr "Качество JPEG"
+
+#: src/views/edit-screen/watermark-type-selector.php:11
+msgid "Watermark Type"
+msgstr "Тип водяного знака"
+
+#: src/views/edit-screen/metaboxes/watermark/applying-rules.php:13
+msgid "Image sizes"
+msgstr "Размеры изображений"
+
+#: src/classes/Backup/Manager.php:69
+msgid "Backup"
+msgstr "Резервная копия"
+
+#: src/views/edit-screen/metaboxes/watermark/applying-rules.php:42
+msgid "Image types"
+msgstr "Типы изображений"
+
+#: src/views/upload/switch.php:13
+#: src/views/edit-screen/metaboxes/watermark/applying-rules.php:29
+#: src/views/edit-screen/metaboxes/watermark/applying-rules.php:34
+msgid "Auto Watermark"
+msgstr "Авто водяной знак"
+
+#: src/classes/Placeholders/DateTime/Time.php:25
+msgid "Current time"
+msgstr "Текущее время"
+
+#: src/classes/Metaboxes/Watermark/Placeholders.php:32
+msgid "Placeholders"
+msgstr "Зарезервированные места"
+
+#: src/views/dashboard/pages/tools.php:61
+msgid "Restore"
+msgstr "Восстановить"
+
+#: src/classes/Watermark/Hooks.php:149 src/classes/Core/Assets.php:178
+msgid "Restore original images"
+msgstr "Восстановить исходные изображения"
+
+#: src/views/dashboard/pages/tools.php:28
+msgid "Start"
+msgstr "Старт"
+
+#: src/views/dashboard/pages/tools.php:14
+msgid "Using this tool you can quickly apply watermark to all images in the Media Library."
+msgstr "С помощью этого инструмента вы можете быстро применить водяной знак ко всем изображениям в медиатеке."
+
+#: src/views/dashboard/pages/tools.php:12
+msgid "Bulk Watermark"
+msgstr "Массовый водяной знак"
+
+#: src/classes/Settings/Settings.php:220 src/classes/Dashboard/Settings.php:23
+msgid "Settings"
+msgstr "Настройки"
+
+#: src/classes/Watermark/Handler.php:127
+msgid "Text"
+msgstr "Текст"
+
+#: src/classes/Watermark/Handler.php:131
+msgid "Image"
+msgstr "Изображение"
+
+#: src/classes/Settings/Settings.php:59
+msgid "General"
+msgstr "Общий"
+
+#: src/views/edit-screen/metaboxes/attachment/watermarks.php:42
+msgid "Restore original image"
+msgstr "Восстановить исходное изображение"
+
+#. Plugin Name of the plugin
+#: src/classes/Dashboard/Dashboard.php:65
+#: src/classes/Dashboard/Dashboard.php:66 src/bootstrap.php:48
+#: src/views/notices/auto-watermark-warning.php:13
+#: src/views/dashboard/wrap.php:12
+msgid "Easy Watermark"
+msgstr "Easy Watermark"
+
+#. translators: errors count.
+#: src/classes/Watermark/Ajax.php:262
+msgid "%s error has occured."
+msgid_plural "%s errors has occured."
+msgstr[0] "%s ошибка."
+msgstr[1] "%s ошибки."
+msgstr[2] "%s ошибок."

@@ -1,0 +1,159 @@
+# Translation of Plugins - Categories to Tags Converter - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Categories to Tags Converter - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-05-24 14:27:29+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Categories to Tags Converter - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#. Author of the plugin/theme
+msgid "wordpressdotorg"
+msgstr "wordpressdotorg"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/extend/plugins/wpcat2tag-importer/"
+msgstr "http://wordpress.org/extend/plugins/wpcat2tag-importer/"
+
+#. Plugin Name of the plugin/theme
+msgid "Categories to Tags Converter Importer"
+msgstr "Конвертер рубрик в метки"
+
+#. #-#-#-#-#  tmp-wpcat2tag-importer.pot (Categories to Tags Converter Importer
+#. 0.5)  #-#-#-#-#
+#. Description of the plugin/theme
+#: wpcat2tag-importer.php:490
+msgid "Convert existing categories to tags or tags to categories, selectively."
+msgstr "Выборочное преобразование рубрик в метки или меток в рубрики."
+
+#: wpcat2tag-importer.php:490
+msgid "Categories and Tags Converter"
+msgstr "Конвертер рубрик и меток"
+
+#: wpcat2tag-importer.php:447
+msgid "* This tag is also a category. The converter has added all posts from it to the category. If you want to remove it, please confirm that all posts were added successfully, then delete it from the <a href=\"%s\">Manage Tags</a> page."
+msgstr "* Эта метка также является рубрикой. Конвертер добавил все записи с этой метки к соответствующей рубрике. Если вы хотите отменить это, пожалуйста, проверьте, что все записи были успешно добавлены, после чего удалите их через страницу <a href=\"%s\">настройки меток</a>."
+
+#: wpcat2tag-importer.php:429
+msgid "Tag #%s doesn&#8217;t exist!"
+msgstr "Метка #%s не существует!"
+
+#: wpcat2tag-importer.php:408
+msgid "All posts were added to the category with the same name."
+msgstr "Все записи были добавлены в рубрику с таким же названием."
+
+#: wpcat2tag-importer.php:384
+msgid "Converting tag <strong>%s</strong> ... "
+msgstr "Конвертируем метку <strong>%s</strong>&hellip;"
+
+#: wpcat2tag-importer.php:359 wpcat2tag-importer.php:448
+msgid "We&#8217;re all done here, but you can always <a href=\"%s\">convert more</a>."
+msgstr "На этом мы и закончим, но вы всегда можете <a href=\"%s\">запустить преобразование снова</a>."
+
+#: wpcat2tag-importer.php:358
+msgid "* This category is also a tag. The converter has added that tag to all posts currently in the category. If you want to remove it, please confirm that all tags were added successfully, then delete it from the <a href=\"%s\">Manage Categories</a> page."
+msgstr "* Эта рубрика также является меткой. Конвертер пометил все записи с этой рубрики соответствующим тэгом. Если вы хотите отменить это, пожалуйста, проверьте, что все тэги были успешно добавлены, после чего удалите их через страницу <a href=\"%s\">настройки рубрик</a>."
+
+#: wpcat2tag-importer.php:316
+msgid "Tag added to all posts in this category."
+msgstr "Метка добавлена ко всем записям этой рубрики."
+
+#: wpcat2tag-importer.php:297 wpcat2tag-importer.php:340
+#: wpcat2tag-importer.php:426
+msgid "Converted successfully."
+msgstr "Конвертирование успешно завершено."
+
+#: wpcat2tag-importer.php:269
+msgid "Converting category <strong>%s</strong> ... "
+msgstr "Конвертируем рубрику <strong>%s</strong>&hellip;"
+
+#: wpcat2tag-importer.php:266
+msgid "Category %s doesn&#8217;t exist!"
+msgstr "Рубрика %s не существует!"
+
+#: wpcat2tag-importer.php:247 wpcat2tag-importer.php:367
+msgid "Uh, oh. Something didn&#8217;t work. Please <a href=\"%s\">try again</a>."
+msgstr "Ой-ой-ой. Что-то не сработало. Пожалуйста, <a href=\"%s\">попробуйте ещё раз</a>."
+
+#: wpcat2tag-importer.php:209
+msgid "Convert Tags to Categories"
+msgstr "Конвертер меток в рубрики"
+
+#: wpcat2tag-importer.php:207
+msgid "* This tag is also a category. When converted, all posts associated with the tag will also be in the category."
+msgstr "* Эта метка также является рубрикой. После преобразования все записи с этой меткой будут помещены в одноимённую рубрику."
+
+#: wpcat2tag-importer.php:165
+msgid "You have no tags to convert!"
+msgstr "Нет меток для конвертирования!"
+
+#: wpcat2tag-importer.php:161
+msgid "The newly created categories will still be associated with the same posts."
+msgstr "Созданные рубрики будут относиться к тем же записям."
+
+#: wpcat2tag-importer.php:160
+msgid "Here you can selectively convert existing tags to categories. To get started, check the tags you wish to be converted, then click the Convert button."
+msgstr "Здесь вы можете выборочно преобразовать существующие метки в рубрики. Выберите метки для конвертирования и нажмите кнопку &laquo;Преобразовать&raquo;."
+
+#: wpcat2tag-importer.php:158
+msgid "Convert Tag to Category."
+msgid_plural "Convert Tags (%d) to Categories."
+msgstr[0] "Преобразовать метку в рубрику"
+msgstr[1] "Преобразовать %d метки в рубрики"
+msgstr[2] "Преобразовать %d меток в рубрики"
+
+#: wpcat2tag-importer.php:145
+msgid "Convert Categories to Tags"
+msgstr "Конвертировать рубрики в метки"
+
+#: wpcat2tag-importer.php:143
+msgid "* This category is also a tag. Converting it will add that tag to all posts that are currently in the category."
+msgstr "* Эта рубрика также является меткой. Её преобразование добавит ко всем записям из этой рубрики одноимённую метку."
+
+#: wpcat2tag-importer.php:113 wpcat2tag-importer.php:120
+#: wpcat2tag-importer.php:189 wpcat2tag-importer.php:196
+msgid "Check All"
+msgstr "Выделить всё"
+
+#: wpcat2tag-importer.php:106 wpcat2tag-importer.php:182
+msgid "Uncheck All"
+msgstr "Снять все выделения"
+
+#: wpcat2tag-importer.php:89
+msgid "You have no categories to convert!"
+msgstr "Нет рубрик для конвертирования!"
+
+#: wpcat2tag-importer.php:85
+msgid "Keep in mind that if you convert a category with child categories, the children become top-level orphans."
+msgstr "Учтите, что если вы конвертируете рубрику с дочерними рубриками, они все станут корневыми."
+
+#: wpcat2tag-importer.php:84
+msgid "Hey there. Here you can selectively convert existing categories to tags. To get started, check the categories you wish to be converted, then click the Convert button."
+msgstr "Привет! Этот скрипт позволяет выборочно преобразовать существующие рубрики в метки. Выберите рубрики для конвертирования и нажмите кнопку &laquo;Преобразовать&raquo;."
+
+#: wpcat2tag-importer.php:82
+msgid "Convert Category to Tag."
+msgid_plural "Convert Categories (%d) to Tags."
+msgstr[0] "Преобразовать рубрику в метку."
+msgstr[1] "Преобразовать %d рубрики в метки."
+msgstr[2] "Преобразовать %d рубрик в метки."
+
+#: wpcat2tag-importer.php:46
+msgid "Tags to Categories"
+msgstr "Метки в рубрики"
+
+#: wpcat2tag-importer.php:45
+msgid "Categories to Tags"
+msgstr "Рубрики в метки"
+
+#: wpcat2tag-importer.php:42
+msgid "Cheatin&#8217; uh?"
+msgstr "Эй! Жульничаем?!"

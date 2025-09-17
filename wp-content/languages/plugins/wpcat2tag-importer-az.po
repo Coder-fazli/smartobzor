@@ -1,0 +1,96 @@
+# Translation of Plugins - Categories to Tags Converter - Stable (latest release) in Azerbaijani
+# This file is distributed under the same license as the Plugins - Categories to Tags Converter - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-08-01 21:01:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: az\n"
+"Project-Id-Version: Plugins - Categories to Tags Converter - Stable (latest release)\n"
+
+#: wpcat2tag-importer.php:42
+msgid "Cheatin&#8217; uh?"
+msgstr "Hiyləkarlıqmı edirsiniz?"
+
+#. Author URI of the plugin/theme
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#. Author of the plugin/theme
+msgid "wordpressdotorg"
+msgstr "wordpressdotorg"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/extend/plugins/wpcat2tag-importer/"
+msgstr "http://wordpress.org/extend/plugins/wpcat2tag-importer/"
+
+#: wpcat2tag-importer.php:84
+msgid "Hey there. Here you can selectively convert existing categories to tags. To get started, check the categories you wish to be converted, then click the Convert button."
+msgstr "Salam! Bu çevirici, seçdiyiniz kateqoriyaları etiketlərə çevirməyinizə imkan yaradar. Başlamaq üçün, çevirmək istədiyiniz kateqoriyanı seçin, sonra Çevir düyməsinə tıklayın."
+
+#. Plugin Name of the plugin/theme
+msgid "Categories to Tags Converter Importer"
+msgstr "Kateqoriyaları Etiketlərə çevirmə idxalçısı"
+
+#. #-#-#-#-#  tmp-wpcat2tag-importer.pot (Categories to Tags Converter Importer
+#. 0.5)  #-#-#-#-#
+#. Description of the plugin/theme
+#: wpcat2tag-importer.php:490
+msgid "Convert existing categories to tags or tags to categories, selectively."
+msgstr "Seçiminizdən asılı olaraq kateqoriyaları etiketlərə ya da etiketləri də kateqoriyalara çevirir."
+
+#: wpcat2tag-importer.php:297 wpcat2tag-importer.php:340
+#: wpcat2tag-importer.php:426
+msgid "Converted successfully."
+msgstr "Müvəffəqiyyətlə çevrildi."
+
+#: wpcat2tag-importer.php:359 wpcat2tag-importer.php:448
+msgid "We&#8217;re all done here, but you can always <a href=\"%s\">convert more</a>."
+msgstr "Hər şey tamamdır, amma istəsəniz hər zaman daha çoxunu  <a href=\"%s\">çevirə bilərsiniz</a>."
+
+#: wpcat2tag-importer.php:384
+msgid "Converting tag <strong>%s</strong> ... "
+msgstr "<strong>%s</strong> etiketi çevrilir..."
+
+#: wpcat2tag-importer.php:490
+msgid "Categories and Tags Converter"
+msgstr "kateqoriya və Etiket Çeviricisi"
+
+#: wpcat2tag-importer.php:85
+msgid "Keep in mind that if you convert a category with child categories, the children become top-level orphans."
+msgstr "Yadınızdan çıxarmayın, alt kateqoriyalara sahib bir kateqoriyanı çevirsəniz, alt kateqoriyalar ən üst səviyyə sahibsiz kateqoriyalara çevrilirlər."
+
+#: wpcat2tag-importer.php:89
+msgid "You have no categories to convert!"
+msgstr "Çevriləcək heç bir kateqoriyanız yoxdur!"
+
+#: wpcat2tag-importer.php:143
+msgid "* This category is also a tag. Converting it will add that tag to all posts that are currently in the category."
+msgstr "* Bu kateqoriya eyni zamanda bir etiketdir. Bu kateqoriyanı çevirmək, kateqoriyaya bağlı bütün yazılara avtomatik olaraq bu etiketi daxil edəcək."
+
+#: wpcat2tag-importer.php:160
+msgid "Here you can selectively convert existing tags to categories. To get started, check the tags you wish to be converted, then click the Convert button."
+msgstr "Buradan seçdiyiniz etiketləri kateqoriyalara çevirə bilərsiniz. Başlamaq üçün, çevirmək istədiyiniz etiketləri seçin, sonra Çevir düyməsinə tıklayın."
+
+#: wpcat2tag-importer.php:161
+msgid "The newly created categories will still be associated with the same posts."
+msgstr "Yeni yaradılacaq kateqoriyalar daha öncə əlaqəli olduqları yazılarla əlaqələndiriləcək."
+
+#: wpcat2tag-importer.php:165
+msgid "You have no tags to convert!"
+msgstr "Çevriləcək heç bir etiketiniz yoxdur!"
+
+#: wpcat2tag-importer.php:207
+msgid "* This tag is also a category. When converted, all posts associated with the tag will also be in the category."
+msgstr "* Bu etiket eyni zamanda bir kateqoriyadır. Etiketi çevirdiyinizdə bu etiketə sahib olan bütün yazılar avtomatik olaraq bu kateqoriyanın altında yer alacaq."
+
+#: wpcat2tag-importer.php:247 wpcat2tag-importer.php:367
+msgid "Uh, oh. Something didn&#8217;t work. Please <a href=\"%s\">try again</a>."
+msgstr "Ufff. Deyəsən bir problem var. Lütfən <a href=\"%s\">təkrar yoxlayın</a>."
+
+#: wpcat2tag-importer.php:269
+msgid "Converting category <strong>%s</strong> ... "
+msgstr "<strong>%s</strong> kateqoriyası çevrilir..."
